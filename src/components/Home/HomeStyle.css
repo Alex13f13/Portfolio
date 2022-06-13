@@ -1,0 +1,13 @@
+.home-Container {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+h1 {
+    margin: 4% 0%;
+}

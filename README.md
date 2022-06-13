@@ -1,53 +1,10 @@
 # Porfolio
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+SECCIONES:
+1. Home: Nombre + Frase (Soy Alejandro Feijóo y me dedico a...) PD: Vistoso para llamar la atención
+2. Works: Trabajos creados (Sección para incluir las prácticas que vaya desarrollando). De 3 a 10, siendo los 3 primeros los mejores
+3. About: Resumen de Linkedin (Experiencia y resumen de quien soy)
+4. Contact: Redes sociales y correo (correo personalizado, sin el gmail.com), etc
 
 
 

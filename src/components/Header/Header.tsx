@@ -9,8 +9,8 @@ export default function Header() {
                     I<span>'</span>m
                 </p>
                 Alejandro Feijóo Jiménez
-                <h2>Front-End Web Developer</h2>
             </h3>
+            <h2>Front-End Web Developer</h2>
         </div>
     )
 }

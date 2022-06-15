@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeStyle.css'
-import img from '../../props/afeijoo-verde.png'
+import img from '../../props/perfil-img.jpeg'
 import { BsMouse } from 'react-icons/bs'
 import Buttons from '../Button/Button'
 
@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div id='home' className='container home-container'>
             <div className='logo'>
-                <div className="main-img">
+                <div className="main-img" onClick={activeCircle}>
                     <span className="circle"></span>
                     <span className="circle"></span>
                     <span className="circle"></span>
@@ -43,7 +43,9 @@ export default function Home() {
     )
 }
 
-const toggle = document.querySelector('.main-img');
-toggle?.addEventListener('click', () => {
-    toggle.classList.toggle('active')
-})
+
+function activeCircle() {
+    const toggle = document.querySelector('.main-img');
+    toggle?.classList.toggle('active')
+    console.log(toggle);
+}

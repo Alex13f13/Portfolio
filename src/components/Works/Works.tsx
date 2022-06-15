@@ -4,7 +4,7 @@ import './WorksStyle.css'
 
 export default function Works() {
     return (
-        <div className='works-Container'>
+        <div className='works-container'>
             <h1>Works</h1>
             <Work />
             <Work />

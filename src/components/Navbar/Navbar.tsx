@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Navbar.css'
 import { AiOutlineHome } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
-// import { AiOutlineWorks } from 'react-icons/ai';
+import { AiOutlineProject } from 'react-icons/ai';
 import { BiMessageRoundedDots } from 'react-icons/bi'
 import { BsArrowDownCircle } from 'react-icons/bs'
 
 export default function Navbar() {
+    useEffect(() => {
+        const icons = document.querySelectorAll('.navbar-container .icon')
+        icons.forEach((icon: any) => {
+            icon.addEventListener('click', () => {
+                changeActive(icons);
+                icon.classList.add('active-nav');
+            });
+        });
+    }, [])
+
+    const changeActive = (icons: any) => {
+        icons.forEach((icon: any) => {
+            icon.classList.remove('active-nav');
+        });
+    }
+
+
     return (
         <div className='navbar-container'>
             <a href='#home'>
@@ -15,9 +32,9 @@ export default function Navbar() {
             <a href='#about'>
                 <AiOutlineUser className='icon' />
             </a>
-            {/* <a href='#works'>
-                <AiOutlineWorks className='icon' />
-            </a> */}
+            <a href='#projects'>
+                <AiOutlineProject className='icon' />
+            </a>
             <a href='#contact'>
                 <BiMessageRoundedDots className='icon' />
             </a>
@@ -26,19 +43,4 @@ export default function Navbar() {
             </a>
         </div>
     )
-}
-
-
-let Icons = document.querySelectorAll('.navbar-container .icon');
-Icons.forEach((icon) => {
-    icon.addEventListener('click', () => {
-        changeactive();
-        icon.classList.add('active-nav');
-    });
-});
-
-function changeactive() {
-    Icons.forEach((icon) => {
-        icon.classList.remove('active-nav');
-    });
 }

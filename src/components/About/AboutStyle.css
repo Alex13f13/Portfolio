@@ -1,26 +1,20 @@
 .about-container {
     position: relative;
-    display: flex;
-    justify-content: start;
     flex-direction: column;
-    align-items: center;
     min-height: 100vh;
     overflow-x: hidden;
     backdrop-filter: blur(20px);
-    padding: 50px 40px;
 }
 
-.about-container h2 {
-    position: relative;
+.about-me {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     max-width: 60%;
-    margin-top: 60px;
 }
 
-.about-container h2 span {
+.about-me span {
     font-size: 25px;
     opacity: 0.8;
     padding-bottom: 5px;
@@ -28,7 +22,7 @@
     /* font-family: 'Open Sans Condensed', sans-serif; */
 }
 
-.about-container h2 p {
+.about-me p {
     font-size: 20px;
     opacity: 1;
     font-weight: 100;

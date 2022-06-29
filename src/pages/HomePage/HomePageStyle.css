@@ -82,12 +82,21 @@ body::after {
 .container {
     width: var(--pc-width);
     color: var(--text-pri);
-    padding: 10px 40px;
     margin: 5px auto;
     padding: 10px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttons-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0px;
+    width: 100%;
+    padding: 0;
 }
 
 @media (max-width : 500px) {

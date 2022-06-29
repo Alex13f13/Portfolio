@@ -1,15 +1,13 @@
 import React from 'react'
 import './ButtonStyle.css'
 
-export default function Buttons() {
+interface IButtonProps {
+    text: string,
+    onClick: () => void,
+}
+
+export default function Buttons({ text, onClick }: IButtonProps) {
     return (
-        <div className='container button-container'>
-            <a href="#about" className="btn pri">
-                Learn More
-            </a>
-            <a href="#contact" className="btn sec">
-                Get in Touch
-            </a>
-        </div>
+        <button className='button' onClick={onClick}>{text}</button>
     )
 }

@@ -62,7 +62,7 @@
 
 /* Iconos tecnologías */
 .home-container .logo .main-img.active .circle:nth-child(1) {
-    background: url(../../props/html5-icon.png);
+    background: url(../../assets/html5-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -72,7 +72,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(2) {
-    background: url(../../props/css-icon.png);
+    background: url(../../assets/css-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -82,7 +82,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(3) {
-    background: url(../../props/react-icon.png);
+    background: url(../../assets/react-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -92,7 +92,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(4) {
-    background: url(../../props/typescript-icon.png);
+    background: url(../../assets/typescript-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -102,7 +102,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(5) {
-    background: url(../../props/javaScript-icon.png);
+    background: url(../../assets/javaScript-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -112,7 +112,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(6) {
-    background: url(../../props/node_js-icon.png);
+    background: url(../../assets/node_js-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -122,7 +122,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(7) {
-    background: url(../../props/redux-icon.jpg);
+    background: url(../../assets/redux-icon.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -132,7 +132,7 @@
 }
 
 .home-container .logo .main-img.active .circle:nth-child(8) {
-    background: url(../../props/cSharp-icon.png);
+    background: url(../../assets/cSharp-icon.png);
     background-size: cover;
     background-position: center;
     position: absolute;

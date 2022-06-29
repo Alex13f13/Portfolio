@@ -1,6 +1,6 @@
 import React from 'react'
 import './HomeStyle.css'
-import img from '../../props/perfil-img.jpeg'
+import img from '../../assets/perfil-img.jpeg'
 import { BsMouse } from 'react-icons/bs'
 
 export default function Home() {

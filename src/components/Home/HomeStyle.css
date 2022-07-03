@@ -18,6 +18,9 @@
     align-items: center;
     border-radius: 50%;
     user-select: none;
+    transform: translate(-200px);
+    opacity: 0;
+    animation: fade-in 1.5s ease 1 0.5s forwards;
 }
 
 .home-container .logo .main-img {
@@ -29,17 +32,10 @@
     justify-content: center;
     align-items: center;
     z-index: 5;
-    cursor: pointer;
 }
 
 .home-container .logo .main-img.active {
     animation: spin var(--main-img-anim-time) linear;
-}
-
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
 }
 
 .home-container .logo .circle {
@@ -52,11 +48,86 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all .2s ease-in-out;
 }
 
 .home-container .logo .main-img.active .circle {
     opacity: 1;
-    transition: 0.8s ease;
+    transition: 0.3s ease;
+}
+
+.home-container .logo .main-img.active .circle:hover {
+    height: 96px;
+    width: 96px;
+}
+
+.home-container img {
+    position: absolute;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    border: 3px solid rgb(108, 161, 197);
+}
+
+.scroll-down {
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.scroll-down hr {
+    background-color: blue;
+    width: 20px;
+}
+
+.scroll-down h5 {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 100;
+}
+
+.scroll-down .scroll {
+    transform: rotate(-90deg);
+    font-size: 100;
+}
+
+
+/* Animations */
+@keyframes spinIcon {
+    from {
+        pointer-events: none;
+    }
+
+    to {
+        transform: var(--transformEnd);
+        pointer-events: none;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in {
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes icon-hover {
+    to {
+        transform: scale(1.1);
+    }
 }
 
 
@@ -139,55 +210,4 @@
     transform: translate(-180%, -180%) rotate(0deg);
     --transformEnd: translate(-180%, -180%) rotate(-360deg);
     animation: spinIcon var(--main-img-anim-time) linear;
-}
-
-@keyframes spinIcon {
-    to {
-        transform: var(--transformEnd);
-    }
-}
-
-.home-container img {
-    position: absolute;
-    height: 270px;
-    width: 270px;
-    border-radius: 50%;
-    border: 3px solid rgb(108, 161, 197);
-    transform: translate(-200px);
-    opacity: 0;
-    animation: fade-in 1s ease 1 0.5s forwards;
-}
-
-@keyframes fade-in {
-    to {
-        transform: translate(0);
-        opacity: 1;
-    }
-}
-
-.scroll-down {
-    transform: rotate(90deg);
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.scroll-down hr {
-    background-color: blue;
-    width: 20px;
-}
-
-.scroll-down h5 {
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 100;
-}
-
-.scroll-down .scroll {
-    transform: rotate(-90deg);
-    font-size: 100;
 }

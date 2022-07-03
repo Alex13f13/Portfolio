@@ -7,15 +7,15 @@ export default function Home() {
     return (
         <div className='container home-container'>
             <div className='logo'>
-                <div className="main-img" onClick={activeCircle}>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
-                    <span className="circle"></span>
+                <div className="main-img active">
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
+                    <span onClick={goToProjects} className="circle"></span>
                 </div>
 
                 <img src={img} alt="Profile-img" />
@@ -31,8 +31,11 @@ export default function Home() {
     )
 }
 
-
-function activeCircle() {
-    const toggle = document.querySelector('.main-img');
-    toggle?.classList.toggle('active')
+function goToProjects() {
+    window.location.href = '#projects'
 }
+
+// function activeCircle() {
+//     const toggle = document.querySelector('.main-img');
+//     toggle?.classList.toggle('active')
+// }

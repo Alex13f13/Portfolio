@@ -9,12 +9,39 @@ import { BsArrowDownCircle } from 'react-icons/bs'
 export default function Navbar() {
     useEffect(() => {
         const icons = document.querySelectorAll('.navbar-container .icon')
+        window.addEventListener('hashchange', function () {
+            icons.forEach(icon => {
+                icon.classList.remove('active-nav')
+            })
+            const hash = window.location.hash
+            switch (hash) {
+                case '#home':
+                    icons[0].classList.add('active-nav')
+                    break;
+                case '#about':
+                    icons[1].classList.add('active-nav')
+                    break;
+                case '#projects':
+                    icons[2].classList.add('active-nav')
+                    break;
+                case '#contact':
+                    icons[3].classList.add('active-nav')
+                    break;
+                case '#footer':
+                    icons[4].classList.add('active-nav')
+                    break;
+                default:
+                    icons[0].classList.add('active-nav')
+                    break;
+            }
+        })
         icons.forEach((icon: any) => {
             icon.addEventListener('click', () => {
                 changeActive(icons);
                 icon.classList.add('active-nav');
             });
-        });
+        });  
+        window.location.href = "#home"; 
     }, [])
 
     const changeActive = (icons: any) => {
@@ -22,7 +49,6 @@ export default function Navbar() {
             icon.classList.remove('active-nav');
         });
     }
-
 
     return (
         <div className='navbar-container'>

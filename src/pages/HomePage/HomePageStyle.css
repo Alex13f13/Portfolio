@@ -36,7 +36,7 @@ html {
     --tab-width: 90 %;
     --phone-width: 100 %;
 
-    --main-img-anim-time: 14s;
+    --main-img-anim-time: 20s;
 }
 
 body::before {
